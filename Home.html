@@ -1,151 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <style>
+ 
+    #div1 {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position:center;
+      background-color: black;
+      width: 100%;
     
-    <style>
-      /* styling for the button links from code optimizer.com */
-      #div2{
-background-repeat:no-repeat;
-background-size:cover;
-background-position:center;
-background-color:rgb(229, 233, 245);
-width:100%;
-height:500px;
+     align-items: center;
+
+    }
+#div2{
+  height: 100vh;
+}
+    /* styling for the button links from code optimizer.com */
+    .button {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      padding: 12px 24px;
+      border: 1px solid #ed8c74;
+
+      background: #ed9b82;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ed9b82), to(#eb957f));
+      background: -moz-linear-gradient(top, #ed9b82, #eb957f);
+      background: linear-gradient(to bottom, #ed9b82, #eb957f);
+      text-shadow: #e6937e 1px 1px 1px;
+      font: normal normal bold 20px arial;
+      color: #ffffff;
+      text-decoration: none;
+
+    }
+
+    .button:hover,
+    .button:focus {
+      border: 1px solid #ffa185;
+      background: #ffba9c;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ffba9c), to(#ffb398));
+      background: -moz-linear-gradient(top, #ffba9c, #ffb398);
+      background: linear-gradient(to bottom, #ffba9c, #ffb398);
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    /* styling for the button links from code optimizer.com */
+    .button1 {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      padding: 12px 24px;
+      border: 1px solid #524e4e;
+      border-radius: 0px;
+      background: #9b9393;
+      background: -webkit-gradient(linear, left top, left bottom, from(#9b9393), to(#524e4e));
+      background: -moz-linear-gradient(top, #9b9393, #524e4e);
+      background: linear-gradient(to bottom, #9b9393, #524e4e);
+      -webkit-box-shadow: #bab0b0 0px 0px 3px 0px;
+      -moz-box-shadow: #bab0b0 0px 0px 3px 0px;
+      box-shadow: #bab0b0 0px 0px 3px 0px;
+      text-shadow: #312e2e 1px 1px 1px;
+      font: normal normal bold 20px arial;
+      color: #ffffff;
+      text-decoration: none;
+      
+    }
+
+    .button1:hover,
+    .button1:focus {
+      border: 1px solid #615c5c;
+      background: #bab0b0;
+      background: -webkit-gradient(linear, left top, left bottom, from(#bab0b0), to(#625e5e));
+      background: -moz-linear-gradient(top, #bab0b0, #625e5e);
+      background: linear-gradient(to bottom, #bab0b0, #625e5e);
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+ a:hover{
+  border: 1px solid #615c5c;
+      background: #bab0b0;
+      background: -webkit-gradient(linear, left top, left bottom, from(#bab0b0), to(#625e5e));
+      background: -moz-linear-gradient(top, #bab0b0, #625e5e);
+      background: linear-gradient(to bottom, #bab0b0, #625e5e);
+      color: #ffffff;
+ }
+ .nav-pills{
+       
+      color: #ffffff;
+        
       }
-      .button {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding: 12px 24px;
-    border: 1px solid #ed8c74;
+.CurrActive{
+  background: #bab0b0;
+        border: 1px solid #615c5c;
+        background: -webkit-gradient(linear, left top, left bottom, from(#bab0b0), to(#625e5e));
+      background: -moz-linear-gradient(top, #bab0b0, #625e5e);
+      background: linear-gradient(to bottom, #bab0b0, #625e5e);
+      color: #ffffff;
+}
+    /* End of styling for the button links from code optimizer.com */
+    ul.nav {
+  display: flex;
+  /* set direction of children to column based */
+  flex-direction: column;
+
+  /* if you wish to center items along X and Y axis */
+  align-items: left;
+  justify-content: left;
+}
+@media screen and (min-width: 768px) {
+  ul.nav {
+    /* change direction of children to row based */
+    flex-direction: row;
     
-    background: #ed9b82;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ed9b82), to(#eb957f));
-    background: -moz-linear-gradient(top, #ed9b82, #eb957f);
-    background: linear-gradient(to bottom, #ed9b82, #eb957f);
-    text-shadow: #e6937e 1px 1px 1px;
-    font: normal normal bold 20px arial;
-    color: #ffffff;
-    text-decoration: none;
-}
-.button:hover,
-.button:focus {
-    border: 1px solid #ffa185;
-    background: #ffba9c;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ffba9c), to(#ffb398));
-    background: -moz-linear-gradient(top, #ffba9c, #ffb398);
-    background: linear-gradient(to bottom, #ffba9c, #ffb398);
-    color: #ffffff;
-    text-decoration: none;
-}
-.button:active {
-    background: #8e5d4e;
-    background: -webkit-gradient(linear, left top, left bottom, from(#8e5d4e), to(#eb957f));
-    background: -moz-linear-gradient(top, #8e5d4e, #eb957f);
-    background: linear-gradient(to bottom, #8e5d4e, #eb957f);
-}
- /* styling for the button links from code optimizer.com */
-.button1 {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding: 12px 24px;
-    border: 1px solid #524e4e;
-    border-radius: 0px;
-    background: #9b9393;
-    background: -webkit-gradient(linear, left top, left bottom, from(#9b9393), to(#524e4e));
-    background: -moz-linear-gradient(top, #9b9393, #524e4e);
-    background: linear-gradient(to bottom, #9b9393, #524e4e);
-    -webkit-box-shadow: #bab0b0 0px 0px 3px 0px;
-    -moz-box-shadow: #bab0b0 0px 0px 3px 0px;
-    box-shadow: #bab0b0 0px 0px 3px 0px;
-    text-shadow: #312e2e 1px 1px 1px;
-    font: normal normal bold 20px arial;
-    color: #ffffff;
-    text-decoration: none;
-}
-.button1:hover,
-.button1:focus {
-    border: 1px solid #615c5c;
-    background: #bab0b0;
-    background: -webkit-gradient(linear, left top, left bottom, from(#bab0b0), to(#625e5e));
-    background: -moz-linear-gradient(top, #bab0b0, #625e5e);
-    background: linear-gradient(to bottom, #bab0b0, #625e5e);
-    color: #ffffff;
-    text-decoration: none;
-}
-.button1:active {
-    background: #524e4e;
-    background: -webkit-gradient(linear, left top, left bottom, from(#524e4e), to(#524e4e));
-    background: -moz-linear-gradient(top, #524e4e, #524e4e);
-    background: linear-gradient(to bottom, #524e4e, #524e4e);
-}
+    /* you can then unset align and justify if needed or used */
+    align-items: center;
+    justify-content: center;
+  }
+} 
 
+.btn-appstore { 
+ align-items: left;
+}
+p{
+    color:white;
+  }
   </style>
-    <script>
-      $(document).ready(function(){
-      $('a[data-toggle="tooltip"]').tooltip({
-    animated: 'fade',
-    placement: 'bottom',
-    html: true
-});
-      });
-      </script>
-  </head>
-  <body>
-<div class="container-fluid">
-    <nav class="navbar navbar-light justify-content-center" style="background-color:rgb(241, 238, 227);">
-        <ul class="nav nav-pills">
-        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li style="font-size:larger; font-family:cursive; " class="nav-item"><a style="color: black"; data-toggle="tooltip" title="<img src='../myPortfolio/img_Alt.jpg' />" href="#">aarthee</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-    </ul>
+  <script>
+    /* Code for Navigation buttons to stay active on click from StackOverflow.com */
+    $(document).ready(function () {
+        var links = $('.customcss').click(function () {
+            links.removeClass('CurrActive');
+            links.removeClass('a');
+            $(this).addClass('CurrActive');
+        });
+    });
+    var image;
+    window.onload=function(){
+      var canvas=document.getElementById('myCanvas');
+      var context=canvas.getContext('2d');
+      image=new Image();
+      image.onload=function(){
+        context.drawImage(image,10,10);
+        context.fillStyle = "rgba(200, 0, 0, 0.5)";
+                    context.fillRect(0, 0, 500, 500);
+      }
+      image.src="me4.jpg";
+    }
+</script>
+</head>
+
+<body>
+  <!--Nav Bar-->
+  
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(241, 238, 227);">
+ 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+      <ul class="nav nav-pills ">
+        <li class="nav-item"></li>
+        <li class="nav-item "><a class="nav-link customcss" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link customcss" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link customcss" href="#work">Work</a></li>
+        <li class="nav-item"><a class="nav-link customcss" href="#">Contact</a></li>
+      </ul>
+    </div>
     </nav>
-</div>
-<div id="div2" class="row">
-<div class="col-sm-6">
-<h3 class=""> Hi!</h3> <br>
-<h1 class="">I'm Aarthee Ranganathan</h1>
-<p>Based in Perth, I'm an aspiring software developer looking for a start to kick of my career after a break.</p>
-<p>Currently upgrading my skills with the new technologies and doing my first project.</p>
-<a class="button1" href="mailto:aarthee22@yahoo.in">Hire Me</a>
-<a class="button" href="C:\Users\Aarthee Thiyagarajan\Desktop\Thiyaga\resume\Aarthee resume.docx" download>Resume</a>
-</div>
-<div class="col-sm-6">hi</div>
-</div>
-<footer class="text-center text-lg-start bg-dark text-white">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected:</span>
+
+  <!--End of Nav Bar-->
+  <div id="div1" class="container-fluid">
+    <!--Home page-->  
+    <div id="div2" class="row">
+    <div class="col-xs-12 col-sm-8 col-md-8 text-center">
+      <br><br><br><br><br><br>
+      <p class="h3" > Hi There!</p>
+      <p class="h2">I'm <span style="color:rgb(109, 119, 179); font-style:italic">an aspiring Web Developer</span></p>
+      <p  style="font-family:Calibri;font-size:20px; display:block">Currently upgrading my skills with the new technologies and doing my first project.</p>
+      <a class="button1 btn-appstore" href="mailto:aarthee22@yahoo.in">Hire Me</a>
+      <a class="button btn-appstore" href="C:\Users\Aarthee Thiyagarajan\Desktop\Thiyaga\resume\Aarthee resume.docx"
+        download>Resume</a> 
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-4 text-center">
+        <br><br>
+        <canvas id="myCanvas" width="300px" height="400px">
+          Your browser does not support the HTML5 canvas tag.
+        </canvas>
+        
+      </div>
+     
     </div>
-    <!-- Left -->
 
-    <!-- Right -->
-    <div>
-      <a class="btn btn-outline-light btn-floating me-3" href="#!" role="button">
-        <i class="fab fa-facebook-f"></i></a>
-     <!-- Linkedin -->
-     <a class="btn btn-outline-light btn-floating me-3" href="#!" role="button">
-      <i class="fab fa-linkedin-in"></i></a>
+     <!--End of Home page-->  
+     <!--About page-->
+  <div class="row">
+    <a name="about"></a>
+    <div class="col-md-12">
+<section style="font-family:Calibri;font-size:18px;">
+  <br><p class="h3 text-center" style="background-color:rgb(95, 92, 92); color:white; width:20%">A Little About me</p>
+      <p class="text-break">Hello, I'm currently a Workforce Planner with Royal Automobile Club of WA.My background in Computer Science has helped me and my team in understanding and implementing new systems/changes that are user friendly.
+<p>My "Can-do" Attitude along with "Willingness to help to go the extra mile" has contributed to my success as a FINALST for the "Employee of the Year" Award at RAC.</p>
+<p>I've worked across multiple roles including <mark>Support Analyst</mark>, <mark>Scheduler</mark> and <mark>Workforce Planner</mark>. My focus these days is to get back into software development. I'm passionate about solving technical challenges and am currently doing a course to updgrade my skills to get me back into the Software Industry.  </p>
+</section>
+</div>
+  </div>
+      <!-- End of About page-->
+          <!--Work History page-->
+  <div class="row">
+    <a name="work"></a>
+    <div class="col-md-12">
+      <section style="font-family:Calibri;font-size:18px;">
+        <br><p class="h3 text-center" style="background-color:rgb(95, 92, 92); color:white; width:20%">Employment History</p>
+     <ul>
+      <li>
+        Royal Automobile Club
+      </li>
+     </ul>
+      </section>
+      </div>
+</div>
 
-   <!-- Github -->
-   <a class="btn btn-outline-light btn-floating me-3" href="#!" role="button">
-    <i class="fab fa-github"></i></a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
+<!--End of Work History page-->
+</div>
+  <!-- footer */ -->
+  <footer class="text-center text-lg-start bg-dark text-white">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected:</span>
+      </div>
+      <!-- Left -->
 
+      <!-- Right -->
+      <div>
+        <a class="btn btn-outline-light btn-floating me-3" href="#!" role="button">
+          <i class="fab fa-facebook-f"></i></a>
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating me-3" href="#!" role="button">
+          <i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating me-3" href="#!" role="button">
+          <i class="fab fa-github"></i></a>
+      </div>
+      <!-- Right -->
+    </section>
+  </footer>
+    <!-- Section: Social media -->
+    <!-- End of Footer */ -->
 </body>
+
 </html>
