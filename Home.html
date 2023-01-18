@@ -10,22 +10,27 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/8df36932ec.js" crossorigin="anonymous"></script>
   <style>
- 
+    /* Style for the whole webpage */
     #div1 {
       background-repeat: no-repeat;
       background-size: cover;
-      background-position:center;
+      background-position: center;
       background-color: black;
       width: 100%;
-    
-     align-items: center;
-
+      align-items: center;
     }
-#div2{
-  height: 100vh;
-}
+/* Style for Animation effect on the Home Page */
+    .word {
+      margin: auto;
+      color: purple;
+      font: 500 normal 1.5em 'tahoma';
+      text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    }
+
+
     /* styling for the button links from code optimizer.com */
     .button {
       display: inline-block;
@@ -75,7 +80,7 @@
       font: normal normal bold 20px arial;
       color: #ffffff;
       text-decoration: none;
-      
+
     }
 
     .button1:hover,
@@ -88,89 +93,355 @@
       color: #ffffff;
       text-decoration: none;
     }
-
- a:hover{
-  border: 1px solid #615c5c;
+    /* End of styling for the button links from code optimizer.com */
+    a:hover {
+      border: 1px solid #615c5c;
       background: #bab0b0;
       background: -webkit-gradient(linear, left top, left bottom, from(#bab0b0), to(#625e5e));
       background: -moz-linear-gradient(top, #bab0b0, #625e5e);
       background: linear-gradient(to bottom, #bab0b0, #625e5e);
       color: #ffffff;
- }
- .nav-pills{
-       
+    }
+
+    .nav-pills {
       color: #ffffff;
-        
-      }
-.CurrActive{
-  background: #bab0b0;
-        border: 1px solid #615c5c;
-        background: -webkit-gradient(linear, left top, left bottom, from(#bab0b0), to(#625e5e));
+    }
+
+    .CurrActive {
+      background: #bab0b0;
+      border: 1px solid #615c5c;
+      background: -webkit-gradient(linear, left top, left bottom, from(#bab0b0), to(#625e5e));
       background: -moz-linear-gradient(top, #bab0b0, #625e5e);
       background: linear-gradient(to bottom, #bab0b0, #625e5e);
       color: #ffffff;
-}
-    /* End of styling for the button links from code optimizer.com */
+    }
+
+/* Style for Navigation menu */
     ul.nav {
-  display: flex;
-  /* set direction of children to column based */
-  flex-direction: column;
+      display: flex;
+      /* set direction of children to column based */
+      flex-direction: column;
 
-  /* if you wish to center items along X and Y axis */
-  align-items: left;
-  justify-content: left;
-}
-@media screen and (min-width: 768px) {
-  ul.nav {
-    /* change direction of children to row based */
-    flex-direction: row;
-    
-    /* you can then unset align and justify if needed or used */
-    align-items: center;
-    justify-content: center;
-  }
-} 
+      /* if you wish to center items along X and Y axis */
+      align-items: left;
+      justify-content: left;
+    }
+/* Responsive Style for Navigation menu */
+    @media screen and (min-width: 768px) {
+      ul.nav {
+        /* change direction of children to row based */
+        flex-direction: row;
 
-.btn-appstore { 
- align-items: left;
-}
-p{
-    color:white;
-  }
+        /* you can then unset align and justify if needed or used */
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .btn-appstore {
+      align-items: left;
+    }
+
+    p {
+      color: white;
+      margin: 0em;
+
+    }
+/* Style for Skills section */
+    .progress {
+      width: 150px;
+      height: 150px !important;
+      float: left;
+      line-height: 150px;
+      background: none;
+      margin: 20px;
+      box-shadow: none;
+      position: relative;
+    }
+
+    .progress:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 12px solid #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .progress>span {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+    }
+
+    .progress .progress-left {
+      left: 0;
+    }
+
+    .progress .progress-bar {
+      width: 100%;
+      height: 100%;
+      background: none;
+      border-width: 12px;
+      border-style: solid;
+      position: absolute;
+      top: 0;
+    }
+
+    .progress .progress-left .progress-bar {
+      left: 100%;
+      border-top-right-radius: 80px;
+      border-bottom-right-radius: 80px;
+      border-left: 0;
+      -webkit-transform-origin: center left;
+      transform-origin: center left;
+    }
+
+    .progress .progress-right {
+      right: 0;
+    }
+
+    .progress .progress-right .progress-bar {
+      left: -100%;
+      border-top-left-radius: 80px;
+      border-bottom-left-radius: 80px;
+      border-right: 0;
+      -webkit-transform-origin: center right;
+      transform-origin: center right;
+      animation: loading-1 1.8s linear forwards;
+    }
+
+    .progress .progress-value {
+      width: 90%;
+      height: 90%;
+      border-radius: 50%;
+      background: #000;
+      font-size: 24px;
+      color: #fff;
+      line-height: 135px;
+      text-align: center;
+      position: absolute;
+      top: 5%;
+      left: 5%;
+    }
+
+    .progress.blue .progress-bar {
+      border-color: #049dff;
+    }
+
+    .progress.blue .progress-left .progress-bar {
+      animation: loading-2 0.5s linear forwards 1.8s;
+    }
+
+    .progress.yellow .progress-bar {
+      border-color: #fdba04;
+    }
+
+    .progress.yellow .progress-right .progress-bar {
+      animation: loading-3 0.5s linear forwards;
+    }
+
+    .progress.yellow .progress-left .progress-bar {
+      animation: none;
+    }
+
+    .progress.orange .progress-bar {
+      border-color: orangered;
+    }
+
+    .progress.orange .progress-right .progress-bar {
+      animation: loading-1 0.5s linear forwards;
+    }
+
+    .progress.orange .progress-left .progress-bar {
+      animation: none;
+    }
+    /* End of Style for Skills section */
+/* Animation for Skills section */
+    @keyframes loading-1 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+    }
+
+    @keyframes loading-2 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+      }
+    }
+
+    @keyframes loading-3 {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(120deg);
+        transform: rotate(120deg);
+      }
+    }
+/* Animation for Skills section */
+   /*Style for Timeline (Work History) */
+    ul.timeline {
+      list-style-type: none;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    /* Timeline vertical line */
+    ul.timeline:before {
+      content: ' ';
+      background: #fff;
+      display: inline-block;
+      position: absolute;
+      left: 16px;
+      width: 4px;
+      height: 100%;
+      z-index: 1500;
+      border-radius: 1rem;
+    }
+
+    li.timeline-item {
+      margin: 10px 0;
+    }
+
+    /* Timeline item arrow */
+    .timeline-arrow {
+      border-top: 0.5rem solid transparent;
+      border-right: 0.5rem solid #fff;
+      border-bottom: 0.5rem solid transparent;
+      display: block;
+      position: absolute;
+      left: 2rem;
+    }
+
+    /* Timeline item circle marker */
+    li.timeline-item::before {
+      content: ' ';
+      background: #ddd;
+      display: inline-block;
+      position: absolute;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      left: 11px;
+      width: 14px;
+      height: 14px;
+      z-index: 1500;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    body {
+      background: #E8CBC0;
+      background: -webkit-linear-gradient(to right, #E8CBC0, #636FA4);
+      background: linear-gradient(to right, #E8CBC0, #636FA4);
+      min-height: 100vh;
+    }
+
+    .text-gray {
+      color: #999;
+    }
   </style>
   <script>
     /* Code for Navigation buttons to stay active on click from StackOverflow.com */
     $(document).ready(function () {
-        var links = $('.customcss').click(function () {
-            links.removeClass('CurrActive');
-            links.removeClass('a');
-            $(this).addClass('CurrActive');
-        });
+      var links = $('.customcss').click(function () {
+        links.removeClass('CurrActive');
+        links.removeClass('a');
+        $(this).addClass('CurrActive');
+      });
     });
+    /* Code for inserting an image on a canvas */
     var image;
-    window.onload=function(){
-      var canvas=document.getElementById('myCanvas');
-      var context=canvas.getContext('2d');
-      image=new Image();
-      image.onload=function(){
-        context.drawImage(image,10,10);
-        context.fillStyle = "rgba(200, 0, 0, 0.5)";
-                    context.fillRect(0, 0, 500, 500);
+    window.onload = function () {
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      image = new Image();
+      image.onload = function () {
+        context.drawImage(image, 10, 10);
+        context.fillStyle = "rgba(50, 0, 0, 0.5)";
+        context.fillRect(0, 0, 500, 500);
       }
-      image.src="me4.jpg";
+      image.src = "me6.jpg";
     }
-</script>
+
+/* Code for Text Animation on Home Page */
+    var words = [' Web Developer!', ' Software Developer!', ' Backend Developer!'],
+      part,
+      i = 0,
+      offset = 0,
+      len = words.length,
+      forwards = true,
+      skip_count = 0,
+      skip_delay = 15,
+      speed = 70;
+    var wordflick = function () {
+      setInterval(function () {
+        if (forwards) {
+          if (offset >= words[i].length) {
+            ++skip_count;
+            if (skip_count == skip_delay) {
+              forwards = false;
+              skip_count = 0;
+            }
+          }
+        }
+        else {
+          if (offset == 0) {
+            forwards = true;
+            i++;
+            offset = 0;
+            if (i >= len) {
+              i = 0;
+            }
+          }
+        }
+        part = words[i].substr(0, offset);
+        if (skip_count == 0) {
+          if (forwards) {
+            offset++;
+          }
+          else {
+            offset--;
+          }
+        }
+        $('.word').text(part);
+      }, speed);
+    };
+
+    $(document).ready(function () {
+      wordflick();
+    });
+  </script>
 </head>
 
 <body>
   <!--Nav Bar-->
-  
-    <nav id="mainNav" class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(241, 238, 227);">
- 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
+
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-light" style="background-color:black;">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+      style="background-color:#9b9393">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
     <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
       <ul class="nav nav-pills ">
         <li class="nav-item"></li>
@@ -180,60 +451,182 @@ p{
         <li class="nav-item"><a class="nav-link customcss" href="#">Contact</a></li>
       </ul>
     </div>
-    </nav>
+  </nav>
 
   <!--End of Nav Bar-->
   <div id="div1" class="container-fluid">
-    <!--Home page-->  
+    <!--Home page-->
     <div id="div2" class="row">
-    <div class="col-xs-12 col-sm-8 col-md-8 text-center">
-      <br><br><br><br><br><br>
-      <p class="h3" > Hi There!</p>
-      <p class="h2">I'm <span style="color:rgb(109, 119, 179); font-style:italic">an aspiring Web Developer</span></p>
-      <p  style="font-family:Calibri;font-size:20px; display:block">Currently upgrading my skills with the new technologies and doing my first project.</p>
-      <a class="button1 btn-appstore" href="mailto:aarthee22@yahoo.in">Hire Me</a>
-      <a class="button btn-appstore" href="C:\Users\Aarthee Thiyagarajan\Desktop\Thiyaga\resume\Aarthee resume.docx"
-        download>Resume</a> 
+      <div class="col-xs-12 col-sm-8 col-md-8 text-center">
+        <br><br><br><br><br><br>
+        <p class="h3"> Hi There!</p>
+        <p class="h2">I'm an aspiring <span class="word"></span></p>
+        <p class="text-center text-wrap" style="font-family:Calibri;font-size:20px; display:block">Currently upgrading
+          my skills with the new technologies and doing my first project.</p><br>
+        <a class="button1 btn-appstore" href="mailto:aarthee22@yahoo.in">Hire Me</a>
+        <a class="button btn-appstore" href="C:\Users\Aarthee Thiyagarajan\Desktop\Thiyaga\resume\Aarthee resume.docx"
+          download>Resume</a>
       </div>
-      <div class="col-xs-12 col-sm-8 col-md-4 text-center">
-        <br><br>
-        <canvas id="myCanvas" width="300px" height="400px">
+      <div id="divCanvas" class="col-md-4 d-none d-md-block">
+        <br><br><br><br><br>
+        <canvas class="img-responsive" id="myCanvas" width="200px" height="200px">
           Your browser does not support the HTML5 canvas tag.
         </canvas>
-        
+
       </div>
-     
+
     </div>
 
-     <!--End of Home page-->  
-     <!--About page-->
-  <div class="row">
-    <a name="about"></a>
-    <div class="col-md-12">
-<section style="font-family:Calibri;font-size:18px;">
-  <br><p class="h3 text-center" style="background-color:rgb(95, 92, 92); color:white; width:20%">A Little About me</p>
-      <p class="text-break">Hello, I'm currently a Workforce Planner with Royal Automobile Club of WA.My background in Computer Science has helped me and my team in understanding and implementing new systems/changes that are user friendly.
-<p>My "Can-do" Attitude along with "Willingness to help to go the extra mile" has contributed to my success as a FINALST for the "Employee of the Year" Award at RAC.</p>
-<p>I've worked across multiple roles including <mark>Support Analyst</mark>, <mark>Scheduler</mark> and <mark>Workforce Planner</mark>. My focus these days is to get back into software development. I'm passionate about solving technical challenges and am currently doing a course to updgrade my skills to get me back into the Software Industry.  </p>
-</section>
-</div>
-  </div>
-      <!-- End of About page-->
-          <!--Work History page-->
-  <div class="row">
-    <a name="work"></a>
-    <div class="col-md-12">
-      <section style="font-family:Calibri;font-size:18px;">
-        <br><p class="h3 text-center" style="background-color:rgb(95, 92, 92); color:white; width:20%">Employment History</p>
-     <ul>
-      <li>
-        Royal Automobile Club
-      </li>
-     </ul>
-      </section>
-      </div>
-</div>
+    <!--End of Home page-->
+    <!--About page-->
+    <div id=div3 class="container-fluid">
+      <br><br><br>
+      <div class="row"><span class="h2" style="color: white;">About Me:</span></div><br>
+      <div class="row">
 
+        <a name="about"></a>
+
+        <div class="col-md-4 text-center">
+          <br>
+          <img src="me7.jpg" class="image-fluid" />
+        </div>
+        <div class="col-md-8">
+          <section style="font-family:Calibri;font-size:18px;">
+            <p class="h3" style="color:white;"><span style="font-size: 22px;">Hello, My name is </span>Aarthee
+              Ranganthan!</p>
+            <p class="text-wrap">I'm currently a Workforce Planner with Royal Automobile Club of WA.My background in
+              Computer Science has helped me and my team in understanding and implementing new systems/changes that are
+              user friendly.My "Can-do" Attitude along with "Willingness to help to go the extra mile" has contributed
+              to my success as a FINALST for the "Employee of the Year" Award at RAC.</p>
+            <p>I've worked across multiple roles including <mark>Support Analyst</mark>, <mark>Scheduler</mark> and
+              <mark>Workforce Planner</mark>. My focus these days is to get back into software development. I'm
+              passionate about solving technical challenges and am currently doing a course to updgrade my skills to get
+              me back into the Software Industry. </p>
+          </section>
+        </div>
+      </div>
+      <div class="row h4" style="color: white;">Skills</div>
+      <div class="row d-flex justify-content-center mt-100">
+        <div class="col-md-12">
+          <div class="progress blue">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">HTML</div>
+          </div>
+          <div class="progress yellow">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">CSS</div>
+          </div>
+          <div class="progress orange">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">Javasript</div>
+          </div>
+          <!-- End of About page-->
+        </div>
+      </div>
+    </div>
+    <!--Work History page-->
+    <div class="row"><span class="h2" style="color: white;">Work History:</span></div><br>
+    <a name="work"></a>
+    <!-- Code for timeline from  https://freefrontend.com/bootstrap-timelines/ -->>
+    <div class="container py-1">
+      <div class="row">
+        <div class="col-lg-7 mx-2">
+
+          <!-- Timeline -->
+          <ul class="timeline">
+            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <details>
+                <summary>Support Analyst @ <a href="https://www.infosys.com/">Infosys Ltd</a><br><span
+                    class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Oct 2010-Nov 2012</span></summary>
+                <ul>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Provide incident management using
+                    multiple Oracle queries to fetch data</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Provide incident management using
+                    multiple Oracle queries to fetch data</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Experience in handling Level 3
+                    support minor/major enhancements to existing code that demands in depth analysisof existing logic,
+                    requirements, and its impact on the business.</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Hands-on experiences with working on
+                    complex Linux and Oracle commands (procedures and functions, triggers, packages), implementing
+                    changes to existing code to fix production defects adhering to the change control process.</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Provide 24*7 on call support over
+                    the phone answering queries from clients, raising incidents using JIRA ticketing system and provide
+                    solutions to production issues.</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Running scripts which involve PL/SQL
+                    packages on source file to load data into database while also performing necessary operations on the
+                    data (ETL process)</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Create test cases and support
+                    functional testing for project releases and provide sign off for the same.</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Built and maintained ad hoc reports
+                    using MS Excel for various stake holders.</li>
+                </ul>
+              </details>
+            </li>
+            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <details class="details-example">
+                <summary>Business Reporting Analyst @ <a href="https://rac.com.au/">Royal Automobile Club,
+                    WA</a><br><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Jul 2013-May 2015</span>
+                </summary>
+                <ul>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Prepare and Send out Statistical
+                    Reports for RAC Motoring Division on a daily, weekly and monthly basis using numerical and graphical
+                    representation</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Performing adhoc quantitative and
+                    qualitative analysis of data from various internal and external data sources</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Providing information that help in
+                    making strategic and business planning decisions to Senior Managers</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Generate reports using SAP Business
+                    Objects and manipulate in Excel using advanced Excel functions.</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Create and maintain reports in
+                    Business Objects</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Document and maintain procedures for
+                    all reports</li>
+                </ul>
+              </details>
+            </li>
+            </li>
+            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+              <div class="timeline-arrow"></div>
+              <details class="details-example">
+                <summary>Workforce Planner @ <a href="https://rac.com.au/">Royal Automobile Club, WA</a><br><span
+                    class="small text-gray"><i class="fa fa-clock-o mr-1"></i>June 2017–Present</span></summary>
+                <ul>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Support business decisions through
+                    the preparation of timely and accurate variable forecasts in high volume contact centre, with
+                    specific focus on improving the customer experience and maximizing operational efficiencies</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Effective scheduling of coaching
+                    sessions/meetings making sure service level is maintained in a fast-paced Contact Centre
+                    environment.</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Maintain Rosters and recommend
+                    appropriate changes to rosters based on demand in the centre.</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Maintain spreadsheets and manage all
+                    forms of leave for the entire centre</li>
+                  <li class="text-small mt-2 font-weight-light" style="color:black">Perform Crucial admin tasks and
+                    Managae Reports on Power BI </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </div>   
+    </div>
 <!--End of Work History page-->
 </div>
   <!-- footer */ -->
@@ -245,24 +638,24 @@ p{
         <span>Get connected:</span>
       </div>
       <!-- Left -->
-
       <!-- Right -->
       <div>
-        <a class="btn btn-outline-light btn-floating me-3" href="#!" role="button">
-          <i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-floating me-3" href="mailto:aarthee22@yahoo.in" role="button">
+          <i class="fa fa-sharp fa-solid fa-square-envelope"></i></a>
         <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating me-3" href="#!" role="button">
+        <a class="btn btn-outline-light btn-floating me-3"
+          href="https://www.linkedin.com/in/aarthee-ranganathan-a49352153/" role="button">
           <i class="fab fa-linkedin-in"></i></a>
 
         <!-- Github -->
-        <a class="btn btn-outline-light btn-floating me-3" href="#!" role="button">
+        <a class="btn btn-outline-light btn-floating me-3" href="https://github.com/Aarthee22" role="button">
           <i class="fab fa-github"></i></a>
       </div>
       <!-- Right -->
     </section>
   </footer>
-    <!-- Section: Social media -->
-    <!-- End of Footer */ -->
+  <!-- Section: Social media -->
+  <!-- End of Footer */ -->
 </body>
 
 </html>
