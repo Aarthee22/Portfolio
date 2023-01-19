@@ -1,6 +1,7 @@
 # **My Portfolio website**
 This is a website that I created to showcase my skills and work history. The website will be used by potential employers to find out more about me.
 ## **UX and Features**
+---
 I have chosen a simple and responsive layout for my portfolio. 
 ### **Existing Features**
 1. Navigation Links - Allows users to navigate around my website by clicking each navigation link, which redirects them to the relevant section of the page.(Single page Navigation)
@@ -19,3 +20,30 @@ I have chosen a simple and responsive layout for my portfolio.
 3. Links to each company's website
 4. Timeframe at each work place is dispalyed below the title
 #### **Contact Section**
+
+### **Features Left to Implement**
+Once I've learnt more of JavaScript,  I will add further functionality to the existing features on my website.
+1. Change image on while hovering over the canvas.
+
+## **Technologies Used**
+---
+* HTML 5
+   * The project uses HTML5 to create the basic elements and content of my website.
+* CSS3
+    * The project uses CSS3 to add custom styles to the elements and content of my website
+* Bootstrap v4.3
+    * The project uses Bootstrap v4.3 to add a responsive grid system, prebuilt components, plugins built on jQuery, and Bootstrap styles to my website, before adding my custom styles.
+* Javascript
+    * The project uses JavaScript from Bootstrap which is required to add functionality to some of Bootstrap's components.
+    * It also has other minor javascript code for inserting an image on a canvas and for Text animation.
+* jQuery
+    * The project uses jQuery to simplify DOM manipulation. This is the standard jQuery that is built with Bootstrap components.
+* Font Awesome
+    * The project uses Font Awesome for the social media links and the hamburger button on my website.
+* Visual Studio Code
+    * I've used Visual Studio Code as the development environment to write the code for my website.
+* Git
+    * I've used Git as a version control system to regularly add and commit changes made to project in Cloud9, before pushing them to GitHub.
+* GitHub
+    * I've used GitHub as a remote repository to push and store the committed changes to my project from Git. I've also used GitHub pages to deploy my website in a live environment.
+    
