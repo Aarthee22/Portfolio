@@ -14,13 +14,14 @@
   <script src="https://kit.fontawesome.com/8df36932ec.js" crossorigin="anonymous"></script>
   <style>
     /* Style for the whole webpage */
-    #div1 {
+    body {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-color: black;
       width: 100%;
       align-items: center;
+      font-size:16px;
     }
 /* Style for Animation effect on the Home Page */
     .word {
@@ -348,15 +349,13 @@
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     }
 
-    body {
-      background: #E8CBC0;
-      background: -webkit-linear-gradient(to right, #E8CBC0, #636FA4);
-      background: linear-gradient(to right, #E8CBC0, #636FA4);
-      min-height: 100vh;
-    }
-
+   
     .text-gray {
       color: #999;
+    }
+    .bg{
+      color:black;
+      font-size:0.75em;
     }
   </style>
   <script>
@@ -458,17 +457,17 @@
     <!--Home page-->
     <div id="div2" class="row">
       <div class="col-xs-12 col-sm-8 col-md-8 text-center">
-        <br><br><br><br><br><br>
+        <br><br><br><br><br>
         <p class="h3"> Hi There!</p>
         <p class="h2">I'm an aspiring <span class="word"></span></p>
-        <p class="text-center text-wrap" style="font-family:Calibri;font-size:20px; display:block">Currently upgrading
+        <p class="text-center text-wrap" style="display:block">Currently upgrading
           my skills with the new technologies and doing my first project.</p><br>
         <a class="button1 btn-appstore" href="mailto:aarthee22@yahoo.in">Hire Me</a>
         <a class="button btn-appstore" href="C:\Users\Aarthee Thiyagarajan\Desktop\Thiyaga\resume\Aarthee resume.docx"
           download>Resume</a>
       </div>
       <div id="divCanvas" class="col-md-4 d-none d-md-block">
-        <br><br><br><br><br>
+        <br><br><br><br>
         <canvas class="img-responsive" id="myCanvas" width="210px" height="200px">
           Your browser does not support the HTML5 canvas tag.
         </canvas>
@@ -476,7 +475,7 @@
       </div>
 
     </div>
-
+  </div>
     <!--End of Home page-->
     <!--About page-->
     <div id=div3 class="container-fluid">
@@ -491,8 +490,8 @@
           <img src="images/me8.jpg" class="image-fluid" />
         </div>
         <div class="col-md-8">
-          <section style="font-family:Calibri;font-size:18px;">
-            <p class="h3" style="color:white;"><span style="font-size: 22px;">Hello, My name is </span>Aarthee
+          <section>
+            <p class="h3" style="color:white;"><span>Hello, My name is </span>Aarthee
               Ranganthan!</p>
             <p class="text-wrap">I'm currently a Workforce Planner with Royal Automobile Club of WA.My background in
               Computer Science has helped me and my team in understanding and implementing new systems/changes that are
@@ -540,13 +539,13 @@
       </div>
     </div>
     <!--Work History page-->
-    <div class="row"><span class="h2" style="color: white;">Work History:</span></div><br>
+    <div id=div3 class="container-fluid">
+    <div class="row"><span class="h2" style="color: white;">Work History:</span></div>
     <a name="work"></a>
     <!-- Code for timeline from  https://freefrontend.com/bootstrap-timelines/ -->>
-    <div class="container py-1">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-7 mx-2">
-
+        <div class="col-xs-12 col-s-12 col-lg-7">
           <!-- Timeline -->
           <ul class="timeline">
             <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
@@ -555,25 +554,25 @@
                 <summary>Support Analyst @ <a href="https://www.infosys.com/">Infosys Ltd</a><br><span
                     class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Oct 2010-Nov 2012</span></summary>
                 <ul>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Provide incident management using
+                  <li class="bg text-small mt-2 font-weight-light">Provide incident management using
                     multiple Oracle queries to fetch data</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Provide incident management using
+                  <li class="bg text-small mt-2 font-weight-light">Provide incident management using
                     multiple Oracle queries to fetch data</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Experience in handling Level 3
+                  <li class="bg text-small mt-2 font-weight-light">Experience in handling Level 3
                     support minor/major enhancements to existing code that demands in depth analysisof existing logic,
                     requirements, and its impact on the business.</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Hands-on experiences with working on
+                  <li class="bg text-small mt-2 font-weight-light">Hands-on experiences with working on
                     complex Linux and Oracle commands (procedures and functions, triggers, packages), implementing
                     changes to existing code to fix production defects adhering to the change control process.</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Provide 24*7 on call support over
+                  <li class="bg text-small mt-2 font-weight-light">Provide 24*7 on call support over
                     the phone answering queries from clients, raising incidents using JIRA ticketing system and provide
                     solutions to production issues.</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Running scripts which involve PL/SQL
+                  <li class="bg text-small mt-2 font-weight-light">Running scripts which involve PL/SQL
                     packages on source file to load data into database while also performing necessary operations on the
                     data (ETL process)</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Create test cases and support
+                  <li class="bg text-small mt-2 font-weight-light">Create test cases and support
                     functional testing for project releases and provide sign off for the same.</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Built and maintained ad hoc reports
+                  <li class="bg text-small mt-2 font-weight-light">Built and maintained ad hoc reports
                     using MS Excel for various stake holders.</li>
                 </ul>
               </details>
@@ -585,18 +584,18 @@
                     WA</a><br><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Jul 2013-May 2015</span>
                 </summary>
                 <ul>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Prepare and Send out Statistical
+                  <li class="bg text-small mt-2 font-weight-light">Prepare and Send out Statistical
                     Reports for RAC Motoring Division on a daily, weekly and monthly basis using numerical and graphical
                     representation</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Performing adhoc quantitative and
+                  <li class="bg text-small mt-2 font-weight-light">Performing adhoc quantitative and
                     qualitative analysis of data from various internal and external data sources</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Providing information that help in
+                  <li class="bg text-small mt-2 font-weight-light">Providing information that help in
                     making strategic and business planning decisions to Senior Managers</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Generate reports using SAP Business
+                  <li class="bg text-small mt-2 font-weight-light">Generate reports using SAP Business
                     Objects and manipulate in Excel using advanced Excel functions.</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Create and maintain reports in
+                  <li class="bg text-small mt-2 font-weight-light">Create and maintain reports in
                     Business Objects</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Document and maintain procedures for
+                  <li class="bg text-small mt-2 font-weight-light">Document and maintain procedures for
                     all reports</li>
                 </ul>
               </details>
@@ -608,17 +607,17 @@
                 <summary>Workforce Planner @ <a href="https://rac.com.au/">Royal Automobile Club, WA</a><br><span
                     class="small text-gray"><i class="fa fa-clock-o mr-1"></i>June 2017–Present</span></summary>
                 <ul>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Support business decisions through
+                  <li class="bg text-small mt-2 font-weight-light">Support business decisions through
                     the preparation of timely and accurate variable forecasts in high volume contact centre, with
                     specific focus on improving the customer experience and maximizing operational efficiencies</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Effective scheduling of coaching
+                  <li class="bg text-small mt-2 font-weight-light">Effective scheduling of coaching
                     sessions/meetings making sure service level is maintained in a fast-paced Contact Centre
                     environment.</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Maintain Rosters and recommend
+                  <li class="bg text-small mt-2 font-weight-light">Maintain Rosters and recommend
                     appropriate changes to rosters based on demand in the centre.</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Maintain spreadsheets and manage all
+                  <li class="bg text-small mt-2 font-weight-light">Maintain spreadsheets and manage all
                     forms of leave for the entire centre</li>
-                  <li class="text-small mt-2 font-weight-light" style="color:black">Perform Crucial admin tasks and
+                  <li class="bg text-small mt-2 font-weight-light">Perform Crucial admin tasks and
                     Managae Reports on Power BI </li>
                 </ul>
               </details>
@@ -627,12 +626,14 @@
         </div>
       </div>   
     </div>
+  </div>
 <!--End of Work History page-->
-</div>
+
+
   <!-- footer */ -->
   <footer class="text-center text-lg-start bg-dark text-white">
     <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
       <!-- Left -->
       <div class="me-5 d-none d-lg-block">
         <span>Get connected:</span>
@@ -656,6 +657,7 @@
   </footer>
   <!-- Section: Social media -->
   <!-- End of Footer */ -->
+
 </body>
 
 </html>
