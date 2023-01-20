@@ -21,7 +21,7 @@
       background-color: black;
       width: 100%;
       align-items: center;
-      font-size:16px;
+     
     }
 /* Style for Animation effect on the Home Page */
     .word {
@@ -30,8 +30,6 @@
       font: 500 normal 1.5em 'tahoma';
       text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
     }
-
-
     /* styling for the button links from code optimizer.com */
     .button {
       display: inline-block;
@@ -39,7 +37,6 @@
       vertical-align: middle;
       padding: 12px 24px;
       border: 1px solid #ed8c74;
-
       background: #ed9b82;
       background: -webkit-gradient(linear, left top, left bottom, from(#ed9b82), to(#eb957f));
       background: -moz-linear-gradient(top, #ed9b82, #eb957f);
@@ -48,9 +45,7 @@
       font: normal normal bold 20px arial;
       color: #ffffff;
       text-decoration: none;
-
     }
-
     .button:hover,
     .button:focus {
       border: 1px solid #ffa185;
@@ -61,7 +56,6 @@
       color: #ffffff;
       text-decoration: none;
     }
-
     /* styling for the button links from code optimizer.com */
     .button1 {
       display: inline-block;
@@ -81,9 +75,7 @@
       font: normal normal bold 20px arial;
       color: #ffffff;
       text-decoration: none;
-
     }
-
     .button1:hover,
     .button1:focus {
       border: 1px solid #615c5c;
@@ -103,12 +95,14 @@
       background: linear-gradient(to bottom, #bab0b0, #625e5e);
       color: #ffffff;
     }
-
-    .nav-pills {
+    .nav-pills,.h2,label {
       color: #ffffff;
     }
-
-    .CurrActive {
+    p{
+  color: #ffffff;
+  margin:0.25em;
+} 
+   .CurrActive {
       background: #bab0b0;
       border: 1px solid #615c5c;
       background: -webkit-gradient(linear, left top, left bottom, from(#bab0b0), to(#625e5e));
@@ -143,11 +137,7 @@
       align-items: left;
     }
 
-    p {
-      color: white;
-      margin: 0em;
-
-    }
+    
 /* Style for Skills section */
     .progress {
       width: 150px;
@@ -235,8 +225,8 @@
       border-color: #049dff;
     }
 
-    .progress.blue .progress-left .progress-bar {
-      animation: loading-2 0.5s linear forwards 1.8s;
+    .progress.blue .progress-right .progress-bar {
+      animation: loading-2 0.5s linear forwards;
     }
 
     .progress.yellow .progress-bar {
@@ -271,8 +261,8 @@
       }
 
       100% {
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
+        -webkit-transform: rotate(120deg);
+        transform: rotate(120deg);
       }
     }
 
@@ -283,8 +273,8 @@
       }
 
       100% {
-        -webkit-transform: rotate(144deg);
-        transform: rotate(144deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
       }
     }
 
@@ -295,8 +285,8 @@
       }
 
       100% {
-        -webkit-transform: rotate(120deg);
-        transform: rotate(120deg);
+        -webkit-transform: rotate(140deg);
+        transform: rotate(140deg);
       }
     }
 /* Animation for Skills section */
@@ -357,6 +347,40 @@
       color:black;
       font-size:0.75em;
     }
+
+    input[type=text], select, textarea {
+  width: 50%; /* Full width */
+  padding: 5px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:#9b9393;;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #bab0b0;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+ margin-left: 2%;
+}
   </style>
   <script>
     /* Code for Navigation buttons to stay active on click from StackOverflow.com */
@@ -447,7 +471,7 @@
         <li class="nav-item "><a class="nav-link customcss" href="#">Home</a></li>
         <li class="nav-item"><a class="nav-link customcss" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link customcss" href="#work">Work</a></li>
-        <li class="nav-item"><a class="nav-link customcss" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link customcss" href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -463,7 +487,7 @@
         <p class="text-center text-wrap" style="display:block">Currently upgrading
           my skills with the new technologies and doing my first project.</p><br>
         <a class="button1 btn-appstore" href="mailto:aarthee22@yahoo.in">Hire Me</a>
-        <a class="button btn-appstore" href="C:\Users\Aarthee Thiyagarajan\Desktop\Thiyaga\resume\Aarthee resume.docx"
+        <a class="button btn-appstore" href="Aarthee resume.docx" target="_blank"
           download>Resume</a>
       </div>
       <div id="divCanvas" class="col-md-4 d-none d-md-block">
@@ -478,13 +502,11 @@
   </div>
     <!--End of Home page-->
     <!--About page-->
+    <a name="about"></a>
     <div id=div3 class="container-fluid">
       <br><br><br>
-      <div class="row"><span class="h2" style="color: white;">About Me:</span></div><br>
+      <div class="row"><span class="h2">About Me:</span></div>
       <div class="row">
-
-        <a name="about"></a>
-
         <div class="col-md-4 text-center">
           <br>
           <img src="images/me8.jpg" class="image-fluid" />
@@ -504,7 +526,7 @@
           </section>
         </div>
       </div>
-      <div class="row h4" style="color: white;">Skills</div>
+      <div class="row h4" style="color:white"> Skills:</div>
       <div class="row d-flex justify-content-center mt-100">
         <div class="col-md-12">
           <div class="progress blue">
@@ -538,12 +560,11 @@
         </div>
       </div>
     </div>
-    <!--Work History page-->
-    <div id=div3 class="container-fluid">
-    <div class="row"><span class="h2" style="color: white;">Work History:</span></div>
+    <!--Work History page--> 
     <a name="work"></a>
     <!-- Code for timeline from  https://freefrontend.com/bootstrap-timelines/ -->>
     <div class="container-fluid">
+      <div class="row"><span class="h2">Work History:</span></div>
       <div class="row">
         <div class="col-xs-12 col-s-12 col-lg-7">
           <!-- Timeline -->
@@ -551,7 +572,7 @@
             <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
               <div class="timeline-arrow"></div>
               <details>
-                <summary>Support Analyst @ <a href="https://www.infosys.com/">Infosys Ltd</a><br><span
+                <summary>Support Analyst @ <a href="https://www.infosys.com/" target="_blank">Infosys Ltd</a><br><span
                     class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Oct 2010-Nov 2012</span></summary>
                 <ul>
                   <li class="bg text-small mt-2 font-weight-light">Provide incident management using
@@ -580,7 +601,7 @@
             <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
               <div class="timeline-arrow"></div>
               <details class="details-example">
-                <summary>Business Reporting Analyst @ <a href="https://rac.com.au/">Royal Automobile Club,
+                <summary>Business Reporting Analyst @ <a href="https://rac.com.au/" target="_blank">Royal Automobile Club,
                     WA</a><br><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Jul 2013-May 2015</span>
                 </summary>
                 <ul>
@@ -604,7 +625,7 @@
             <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
               <div class="timeline-arrow"></div>
               <details class="details-example">
-                <summary>Workforce Planner @ <a href="https://rac.com.au/">Royal Automobile Club, WA</a><br><span
+                <summary>Workforce Planner @ <a href="https://rac.com.au/" target="_blank">Royal Automobile Club, WA</a><br><span
                     class="small text-gray"><i class="fa fa-clock-o mr-1"></i>June 2017–Present</span></summary>
                 <ul>
                   <li class="bg text-small mt-2 font-weight-light">Support business decisions through
@@ -626,11 +647,29 @@
         </div>
       </div>   
     </div>
-  </div>
+ 
 <!--End of Work History page-->
-
-
+<a name="contact"></a>
+<p class="h2"> Contact Me:</p>
+<div class="container-fluid container">
+  <div class="col-md-12">
+      <form action="#">
+        <label for="fname">Name</label><br>
+        <input type="text" id="name" name="firstname" placeholder="Your name..">
+<br>
+        <label for="fname">Email</label><br>
+        <input type="text" id="email" name="email" placeholder="Your email.."><br>
+        <label for="subject">Subject</label><br>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px;"></textarea>
+    <br>
+    <input type="checkbox" id="check" name="check"></input><label>&nbsp Send me a copy of this email</label><br><br>
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+  </div>
   <!-- footer */ -->
+</div>
   <footer class="text-center text-lg-start bg-dark text-white">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
@@ -641,15 +680,15 @@
       <!-- Left -->
       <!-- Right -->
       <div>
-        <a class="btn btn-outline-light btn-floating me-3" href="mailto:aarthee22@yahoo.in" role="button">
+        <a class="btn btn-outline-light btn-floating me-3" href="mailto:aarthee22@yahoo.in" role="button" target="_blank">
           <i class="fa fa-sharp fa-solid fa-square-envelope"></i></a>
         <!-- Linkedin -->
         <a class="btn btn-outline-light btn-floating me-3"
-          href="https://www.linkedin.com/in/aarthee-ranganathan-a49352153/" role="button">
+          href="https://www.linkedin.com/in/aarthee-ranganathan-a49352153/" role="button" target="_blank">
           <i class="fab fa-linkedin-in"></i></a>
 
         <!-- Github -->
-        <a class="btn btn-outline-light btn-floating me-3" href="https://github.com/Aarthee22" role="button">
+        <a class="btn btn-outline-light btn-floating me-3" href="https://github.com/Aarthee22" role="button" target="_blank">
           <i class="fab fa-github"></i></a>
       </div>
       <!-- Right -->
