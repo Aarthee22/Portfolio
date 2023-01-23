@@ -60,7 +60,6 @@ I used the [W3C HTML Validator tool](https://validator.w3.org/) to validate my H
 I used the [W3C CSS Validator tool](https://codebeautify.org/cssvalidate#) to validate my CSS code.
 
 ### **Bugs**
-
 1. During Testing, I fond out that Details tag in the Timeline section did not work in IE.
 I did some research and have added a plugin from [Github.com](https://github.com/mathiasbynens/jquery-details) to make this work.
 2. Nav bar did not extend to the full device width. Upon investigation, I found that it was due to a div container. After removing it, it works as intended.
