@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
@@ -15,84 +16,97 @@
   <style>
     /* Style for the whole webpage */
     body {
+      align-items: center;  
+      background-color: black;
+      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
-      background-color: black;
-      width: 100%;
-      align-items: center;
-     
+      width: 100%;  
+      
     }
 /* Style for Animation effect on the Home Page */
     .word {
-      margin: auto;
+      
       color: purple;
       font: 500 normal 1.5em 'tahoma';
+      margin: auto;
       text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
     }
     /* styling for the button links from code optimizer.com */
-    .button {
-      display: inline-block;
-      text-align: center;
-      vertical-align: middle;
-      padding: 12px 24px;
-      border: 1px solid #ed8c74;
+    .button {  
       background: #ed9b82;
-      background: -webkit-gradient(linear, left top, left bottom, from(#ed9b82), to(#eb957f));
+      background: linear-gradient(to bottom, #ed9b82, #eb957f);      
       background: -moz-linear-gradient(top, #ed9b82, #eb957f);
-      background: linear-gradient(to bottom, #ed9b82, #eb957f);
-      text-shadow: #e6937e 1px 1px 1px;
-      font: normal normal bold 20px arial;
+      background: -o-linear-gradient(top, #ed9b82, #eb957f);      
+      background: -webkit-gradient(linear, left top, left bottom, from(#ed9b82), to(#eb957f));
+      background: -webkit-linear-gradient(top, #ed9b82, #eb957f);
+      border: 1px solid #ed8c74;
       color: #ffffff;
+      display: inline-block;
+      font: normal normal bold 20px arial;
+      padding: 12px 24px;
+      text-align: center;
       text-decoration: none;
+      text-shadow: #e6937e 1px 1px 1px;
+      vertical-align: middle;
     }
     .button:hover,
     .button:focus {
-      border: 1px solid #ffa185;
-      background: #ffba9c;
-      background: -webkit-gradient(linear, left top, left bottom, from(#ffba9c), to(#ffb398));
-      background: -moz-linear-gradient(top, #ffba9c, #ffb398);
+      background: #ffba9c;  
       background: linear-gradient(to bottom, #ffba9c, #ffb398);
+      background: -moz-linear-gradient(top, #ffba9c, #ffb398);
+      background: -o-linear-gradient(top, #ffba9c, #ffb398);
+      background: -webkit-gradient(linear, left top, left bottom, from(#ffba9c), to(#ffb398));
+      background: -webkit-linear-gradient(top, #ffba9c, #ffb398);
+      border: 1px solid #ffa185;
       color: #ffffff;
       text-decoration: none;
     }
     /* styling for the button links from code optimizer.com */
-    .button1 {
-      display: inline-block;
-      text-align: center;
-      vertical-align: middle;
-      padding: 12px 24px;
-      border: 1px solid #524e4e;
-      border-radius: 0px;
+    .button1 {     
       background: #9b9393;
-      background: -webkit-gradient(linear, left top, left bottom, from(#9b9393), to(#524e4e));
-      background: -moz-linear-gradient(top, #9b9393, #524e4e);
       background: linear-gradient(to bottom, #9b9393, #524e4e);
-      -webkit-box-shadow: #bab0b0 0px 0px 3px 0px;
-      -moz-box-shadow: #bab0b0 0px 0px 3px 0px;
-      box-shadow: #bab0b0 0px 0px 3px 0px;
-      text-shadow: #312e2e 1px 1px 1px;
-      font: normal normal bold 20px arial;
+      background: -moz-linear-gradient(top, #9b9393, #524e4e);
+      background: -o-linear-gradient(top, #9b9393, #524e4e);
+      background: -webkit-gradient(linear, left top, left bottom, from(#9b9393), to(#524e4e));
+      background: -webkit-linear-gradient(top, #9b9393, #524e4e);
+      border: 1px solid #524e4e;
+      border-radius: 0;   
+      -moz-box-shadow: #bab0b0 0 0 3px 0; 
+      -ms-box-shadow: #bab0b0 0 0 3px 0;  
+      -webkit-box-shadow: #bab0b0 0 0 3px 0; 
+      box-shadow: #bab0b0 0 0 3px 0;
       color: #ffffff;
+      display: inline-block;
+      font: normal normal bold 20px arial;
+      padding: 12px 24px;
+      text-align: center;
       text-decoration: none;
+      text-shadow: #312e2e 1px 1px 1px;     
+      vertical-align: middle;
+      
     }
     .button1:hover,
-    .button1:focus {
-      border: 1px solid #615c5c;
+    .button1:focus {   
       background: #bab0b0;
       background: -webkit-gradient(linear, left top, left bottom, from(#bab0b0), to(#625e5e));
       background: -moz-linear-gradient(top, #bab0b0, #625e5e);
+      background: -o-linear-gradient(top, #bab0b0, #625e5e);
+      background: -webkit-linear-gradient(top, #bab0b0, #625e5e);
       background: linear-gradient(to bottom, #bab0b0, #625e5e);
+      border: 1px solid #615c5c;
       color: #ffffff;
       text-decoration: none;
     }
     /* End of styling for the button links from code optimizer.com */
     a:hover {
-      border: 1px solid #615c5c;
       background: #bab0b0;
       background: -webkit-gradient(linear, left top, left bottom, from(#bab0b0), to(#625e5e));
       background: -moz-linear-gradient(top, #bab0b0, #625e5e);
+      background: -o-linear-gradient(top, #bab0b0, #625e5e);
+      background: -webkit-linear-gradient(top, #bab0b0, #625e5e);
       background: linear-gradient(to bottom, #bab0b0, #625e5e);
+      border: 1px solid #615c5c;
       color: #ffffff;
     }
     .nav-pills,.h2,label {
@@ -103,70 +117,71 @@
   margin:0.25em;
 } 
    .CurrActive {
-      background: #bab0b0;
-      border: 1px solid #615c5c;
+      background: #bab0b0; 
       background: -webkit-gradient(linear, left top, left bottom, from(#bab0b0), to(#625e5e));
       background: -moz-linear-gradient(top, #bab0b0, #625e5e);
+      background: -o-linear-gradient(top, #bab0b0, #625e5e);
+      background: -webkit-linear-gradient(top, #bab0b0, #625e5e);
       background: linear-gradient(to bottom, #bab0b0, #625e5e);
+      border: 1px solid #615c5c;
       color: #ffffff;
     }
 
 /* Style for Navigation menu */
-    ul.nav {
+    .nav {
+          /* if you wish to center items along X and Y axis */
+      align-content: flex-start;
       display: flex;
       /* set direction of children to column based */
       flex-direction: column;
-
-      /* if you wish to center items along X and Y axis */
-      align-items: left;
-      justify-content: left;
     }
 /* Responsive Style for Navigation menu */
     @media screen and (min-width: 768px) {
-      ul.nav {
-        /* change direction of children to row based */
-        flex-direction: row;
-
+      .nav {
         /* you can then unset align and justify if needed or used */
         align-items: center;
+        
+            /* change direction of children to row based */
+        flex-direction: row;
         justify-content: center;
       }
     }
 
     .btn-appstore {
-      align-items: left;
+      margin-bottom: 3%;
     }
 
     
 /* Style for Skills section */
-    .progress {
-      width: 150px;
-      height: 150px !important;
-      float: left;
-      line-height: 150px;
-      background: none;
-      margin: 20px;
-      box-shadow: none;
-      position: relative;
-    }
+      .progress {    
+        background: none;
+        box-shadow: none;
+        float: left;
+        height: 150px;
+        line-height: 150px;
+        margin: 20px;
+        position: relative;
+        width: 150px;
+      }
 
     .progress:after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
       border: 12px solid #fff;
+      border-radius: 50%;  
+      content: "";
+      height: 100%;
+      left: 0;
       position: absolute;
       top: 0;
-      left: 0;
+      width: 100%;
     }
 
     .progress>span {
-      width: 50%;
+      
       height: 100%;
       overflow: hidden;
       position: absolute;
       top: 0;
+      width: 50%;
       z-index: 1;
     }
 
@@ -175,20 +190,21 @@
     }
 
     .progress .progress-bar {
-      width: 100%;
-      height: 100%;
       background: none;
-      border-width: 12px;
       border-style: solid;
+      border-width: 12px;
+      height: 100%;
       position: absolute;
       top: 0;
+      width: 100%;
     }
 
     .progress .progress-left .progress-bar {
-      left: 100%;
-      border-top-right-radius: 80px;
       border-bottom-right-radius: 80px;
       border-left: 0;
+      border-top-right-radius: 80px;
+      left: 100%;
+      -ms-transform-origin: center left;
       -webkit-transform-origin: center left;
       transform-origin: center left;
     }
@@ -198,30 +214,31 @@
     }
 
     .progress .progress-right .progress-bar {
-      left: -100%;
-      border-top-left-radius: 80px;
+      animation: loading-1 1.8s linear forwards;
       border-bottom-left-radius: 80px;
       border-right: 0;
+      border-top-left-radius: 80px;
+      left: -100%;
+      -ms-transform-origin: center right;
       -webkit-transform-origin: center right;
-      transform-origin: center right;
-      animation: loading-1 1.8s linear forwards;
+      transform-origin: center right;  
     }
 
     .progress .progress-value {
-      width: 90%;
-      height: 90%;
-      border-radius: 50%;
       background: #000;
-      font-size: 24px;
+      border-radius: 50%;
       color: #fff;
-      line-height: 135px;
-      text-align: center;
-      position: absolute;
-      top: 5%;
+      font-size: 24px;
+      height: 90%;
       left: 5%;
+      line-height: 135px;
+      position: absolute;
+      text-align: center;
+      top: 5%;
+      width: 90%;
     }
 
-    .progress.blue .progress-bar {
+    .progress.blue, .progress-bar {
       border-color: #049dff;
     }
 
@@ -291,52 +308,53 @@
     }
 /* Animation for Skills section */
    /*Style for Timeline (Work History) */
-    ul.timeline {
+    .timeline {
       list-style-type: none;
-      position: relative;
       padding-left: 1.5rem;
+      position: relative;     
     }
 
     /* Timeline vertical line */
-    ul.timeline:before {
-      content: ' ';
+    .timeline:before {
       background: #fff;
-      display: inline-block;
-      position: absolute;
-      left: 16px;
-      width: 4px;
-      height: 100%;
-      z-index: 1500;
       border-radius: 1rem;
+      content: ' ';   
+      display: inline-block;
+      height: 100%;
+      left: 16px;
+      position: absolute;      
+      width: 4px;    
+      z-index: 1500;      
     }
 
-    li.timeline-item {
+    .timeline-item {
       margin: 10px 0;
     }
 
     /* Timeline item arrow */
-    .timeline-arrow {
-      border-top: 0.5rem solid transparent;
-      border-right: 0.5rem solid #fff;
+    .timeline-arrow { 
       border-bottom: 0.5rem solid transparent;
+      border-right: 0.5rem solid #fff;
+      border-top: 0.5rem solid transparent;
       display: block;
-      position: absolute;
       left: 2rem;
+      position: absolute;
     }
 
     /* Timeline item circle marker */
-    li.timeline-item::before {
-      content: ' ';
+    .timeline-item::before {
+      
       background: #ddd;
-      display: inline-block;
-      position: absolute;
-      border-radius: 50%;
       border: 3px solid #fff;
-      left: 11px;
-      width: 14px;
-      height: 14px;
-      z-index: 1500;
+      border-radius: 50%;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      content: ' ';
+      display: inline-block;
+      height: 14px;
+      left: 11px;
+      position: absolute;
+      width: 14px;  
+      z-index: 1500;   
     }
 
    
@@ -349,24 +367,24 @@
     }
 
     input[type=text], select, textarea {
-  width: 63%; /* Full width */
-  padding: 5px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  margin-top: 6px; /* Add a top margin */
+  padding: 5px; /* Some padding */ 
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 63%; /* Full width */
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color:#9b9393;;
-  color: white;
-  padding: 12px 20px;
+  background-color:#9b9393;
   border: none;
   border-radius: 4px;
+  color: white;
   cursor: pointer;
+  padding: 12px 20px;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -376,10 +394,14 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .container {
-  border-radius: 5px;
   background-color: black;
+  border-radius: 5px;
+  margin-left: 2%;
   padding: 20px;
- margin-left: 2%;
+
+}
+.navbar-toggler{
+  background-color:#9b9393;
 }
   </style>
   <script>
@@ -391,7 +413,7 @@ input[type=submit]:hover {
         $(this).addClass('CurrActive');
       });
     });
-    /* Code for inserting an image on a canvas */
+    /* Code for inserting an image on a canvas from Stack OVerflow.com */
     var image;
     window.onload = function () {
       var canvas = document.getElementById('myCanvas');
@@ -405,8 +427,8 @@ input[type=submit]:hover {
       image.src = "images/me7.jpg";
     }
 
-/* Code for Text Animation on Home Page */
-    var words = [' Web Developer!'],
+/* Code for Text Animation on Home Page from CodeOpen*/
+    var words = [' Full Stack Developer!'],
       part,
       i = 0,
       offset = 0,
@@ -422,7 +444,9 @@ input[type=submit]:hover {
             ++skip_count;
             if (skip_count == skip_delay) {
               forwards = false;
-              skip_count = 0;
+              if(window.innerWidth<=1200){
+              skip_count = 1;
+              }else{skip_count = 0;}
             }
           }
         }
@@ -458,10 +482,9 @@ input[type=submit]:hover {
 <body>
   <!--Nav Bar-->
 
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-light" style="background-color:black;">
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-light">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
-      style="background-color:#9b9393">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -487,12 +510,12 @@ input[type=submit]:hover {
         <p class="text-center text-wrap" style="display:block">Currently upgrading
           my skills with the new technologies and doing my first project.</p><br>
         <a class="button1 btn-appstore" href="mailto:aarthee22@yahoo.in">Hire Me</a>
-        <a class="button btn-appstore" href="Aarthee resume.docx" target="_blank"
+        <a class="button btn-appstore" href="Aarthee_resume.docx" target="_blank"
           download>Resume</a>
       </div>
       <div id="divCanvas" class="col-md-4 d-none d-md-block">
         <br><br><br><br>
-        <canvas class="img-responsive" id="myCanvas" width="210px" height="200px">
+        <canvas class="img-responsive" id="myCanvas" width="210" height="200">
           Your browser does not support the HTML5 canvas tag.
         </canvas>
 
@@ -502,17 +525,17 @@ input[type=submit]:hover {
   </div>
     <!--End of Home page-->
     <!--About page-->
-    <a name="about"></a>
+    <a id="about"></a>
     <div id=div3 class="container-fluid">
       <br><br><br>
       <div class="row"><span class="h2">About Me:</span></div>
       <div class="row">
         <div class="col-md-4 text-center">
           <br>
-          <img src="images/me8.jpg" class="image-fluid" />
+          <img src="images/me8.jpg" class="image-fluid" alt="Image not supported">
         </div>
         <div class="col-md-8">
-          <section>
+          <div>
             <p class="h3" style="color:white;"><span>Hello, My name is </span>Aarthee
               Ranganthan!</p>
             <p class="text-wrap">I'm currently a Workforce Planner with Royal Automobile Club of WA.My background in
@@ -523,9 +546,10 @@ input[type=submit]:hover {
               <mark>Workforce Planner</mark>. My focus these days is to get back into software development. I'm
               passionate about solving technical challenges and am currently doing a course to updgrade my skills to get
               me back into the Software Industry. </p>
-          </section>
+            </div>
         </div>
       </div>
+      <!--Code for Progress bar from FreeFrontEnd.com-->
       <div class="row h4" style="color:white"> Skills:</div>
       <div class="row d-flex justify-content-center mt-100">
         <div class="col-md-12">
@@ -561,8 +585,8 @@ input[type=submit]:hover {
       </div>
     </div>
     <!--Work History page--> 
-    <a name="work"></a>
-    <!-- Code for timeline from  https://freefrontend.com/bootstrap-timelines/ -->>
+    <a id="work"></a>
+    <!-- Code for timeline from  https://freefrontend.com/bootstrap-timelines/ -->
     <div class="container-fluid">
       <div class="row"><span class="h2">Work History:</span></div>
       <div class="row">
@@ -621,7 +645,6 @@ input[type=submit]:hover {
                 </ul>
               </details>
             </li>
-            </li>
             <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
               <div class="timeline-arrow"></div>
               <details class="details-example">
@@ -647,32 +670,59 @@ input[type=submit]:hover {
         </div>
       </div>   
     </div>
- 
+    <!--details and summary tag support plugin script for IE using polyfill from Github.com-->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="jquery.details.js"></script>
+    <script>
+			window.console || (window.console = { 'log': alert });
+			$(function() {
+
+				// Add conditional classname based on support
+				$('html').addClass($.fn.details.support ? 'details' : 'no-details');
+
+				// Show a message based on support
+				$('body').prepend($.fn.details.support ? 'Native support detected; the plugin will only add ARIA annotations and fire custom open/close events.' : 'Emulation active; you are watching the plugin in action!');
+
+				// Emulate <details> where necessary and enable open/close event handlers
+				$('details').details();
+
+				// Bind some example event handlers
+				$('details').on({
+					'open.details': function() {
+						console.log('opened');
+					},
+					'close.details': function() {
+						console.log('closed');
+					}
+				});
+
+			});
+		</script>
 <!--End of Work History page-->
-<a name="contact"></a>
+<a id="contact"></a>
 <p class="h2"> Contact Me:</p>
 <div class="container-fluid container">
   <div class="col-md-12">
       <form action="#">
         <label for="fname">Name</label><br>
-        <input type="text" id="name" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
 <br>
-        <label for="fname">Email</label><br>
+        <label for="email">Email</label><br>
         <input type="text" id="email" name="email" placeholder="Your email.."><br>
         <label for="subject">Subject</label><br>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px;"></textarea>
     <br>
-    <input type="checkbox" id="check" name="check"></input><label>&nbsp Send me a copy of this email</label><br><br>
+    <input type="checkbox" id="check" name="check"><label>&nbsp;Send me a copy of this email</label><br><br>
         <input type="submit" value="Submit">
     
       </form>
     </div>
   </div>
   <!-- footer */ -->
-</div>
+
   <footer class="text-center text-lg-start bg-dark text-white">
     <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
+    <div class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
       <!-- Left -->
       <div class="me-5 d-none d-lg-block">
         <span>Get connected:</span>
@@ -692,7 +742,7 @@ input[type=submit]:hover {
           <i class="fab fa-github"></i></a>
       </div>
       <!-- Right -->
-    </section>
+    </div>
   </footer>
   <!-- Section: Social media -->
   <!-- End of Footer */ -->
