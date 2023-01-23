@@ -1,7 +1,6 @@
 # **My Portfolio website**
 This is a website that I created to showcase my skills and work history. The website will be used by potential employers to find out more about me.
 ## **UX and Features**
----
 I have chosen a simple and responsive layout for my portfolio. 
 ### **Existing Features**
 1. Navigation Links - Allows users to navigate around my website by clicking each navigation link, which redirects them to the relevant section of the page.(Single page Navigation)
@@ -30,7 +29,6 @@ Once I've learnt more of JavaScript and server side programing,  I will add furt
 2. The submit button functionality on the form to send the email.
 
 ## **Technologies Used**
----
 * HTML 5
    * The project uses HTML5 to create the basic elements and content of my website.
 * CSS3
@@ -52,7 +50,6 @@ Once I've learnt more of JavaScript and server side programing,  I will add furt
     * I've used GitHub as a remote repository to push and store the committed changes to my project from Git. I've also used GitHub pages to deploy my website in a live environment.
 
 ## **Testing**
----
 I used Google Chrome's Development tools to constantly test each change that I made to my website and to ensure that it appeared in the desired way on different screen sizes. I also tested my website on different screen sizes (mobile, tablet and desktop) to ensure it appeared in the desired way on different devices.
 
 To test my whole website, I went through each page, feature by feature, and documented the results on a spreadsheet. The spreadsheet also documents any responsive features and confirms that they work and appear as intended on different screen sizes. The link to the spreadsheet it below:
@@ -69,7 +66,6 @@ I did some research and have added a plugin from [Github.com](https://github.com
 2. Nav bar did not extend to the full device width. Upon investigation, I found that it was due to a div container. After removing it, it works as intended.
 3. When clicking the "Resume" button on the home page, it brought up a File not Found error. This was due to the file being on a local machine. I have now moved the document into the Git Repository and since then, it is working as intended.
 ## **Deployment**
----
 The hosting platform that I've used for my project is GitHub Pages. To deploy my website to GitHub pages, I used the following steps:
 
 1. Loaded the terminal window in my Vistual Studio workspace.
