@@ -92,12 +92,12 @@ The hosting platform that I've used for my project is GitHub Pages. To deploy my
 10. Ran several regular commits throughout my project.
 
 ## Repository Link
-https://github.com/Aarthee22/Portfolio/
+https://github.com/Aarthee22/Quiz
 
 ## Running Code Locally
 To run my code locally, users can download a local copy of my code to their desktop by completing the following steps:
 
-1. Go to my [GitHub](https://github.com/Aarthee22/Portfolio/) repository.
+1. Go to my [GitHub](https://github.com/Aarthee22/Quiz) repository.
 2. Click on 'Clone or download'.
 3. Click on 'Download ZIP'.
 4. Once downloaded, extract the zip file's contents and run my website locally.

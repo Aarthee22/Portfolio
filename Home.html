@@ -22,6 +22,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;  
+      margin:auto;
       
     }
 /* Style for Animation effect on the Home Page */
@@ -407,6 +408,7 @@ input[type=submit]:hover {
   <script>
     /* Code for Navigation buttons to stay active on click from StackOverflow.com */
     $(document).ready(function () {
+    
       var links = $('.customcss').click(function () {
         links.removeClass('CurrActive');
         links.removeClass('a');
@@ -490,8 +492,7 @@ input[type=submit]:hover {
 
     <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
       <ul class="nav nav-pills ">
-        <li class="nav-item"></li>
-        <li class="nav-item "><a class="nav-link customcss" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link active customcss" href="#">Home</a></li>
         <li class="nav-item"><a class="nav-link customcss" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link customcss" href="#work">Work</a></li>
         <li class="nav-item"><a class="nav-link customcss" href="#contact">Contact</a></li>
@@ -550,7 +551,7 @@ input[type=submit]:hover {
         </div>
       </div>
       <!--Code for Progress bar from FreeFrontEnd.com-->
-      <div class="row h4" style="color:white"> Skills:</div>
+      <div class="row h4" style="color:white">Core Skills:</div>
       <div class="row d-flex justify-content-center mt-100">
         <div class="col-md-12">
           <div class="progress blue">
@@ -571,7 +572,7 @@ input[type=submit]:hover {
             </span>
             <div class="progress-value">CSS</div>
           </div>
-          <div class="progress orange">
+          <div class="progress yellow">
             <span class="progress-left">
               <span class="progress-bar"></span>
             </span>
@@ -579,6 +580,24 @@ input[type=submit]:hover {
               <span class="progress-bar"></span>
             </span>
             <div class="progress-value">Javasript</div>
+          </div>
+          <div class="progress orange">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">React</div>
+          </div>
+          <div class="progress orange">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">Python</div>
           </div>
           <!-- End of About page-->
         </div>
@@ -703,16 +722,13 @@ input[type=submit]:hover {
 <p class="h2"> Contact Me:</p>
 <div class="container-fluid container">
   <div class="col-md-12">
-      <form action="#">
-        <label for="fname">Name</label><br>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <form action="mailto:aarthee22@yahoo.in">
 <br>
-        <label for="email">Email</label><br>
-        <input type="text" id="email" name="email" placeholder="Your email.."><br>
         <label for="subject">Subject</label><br>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px;"></textarea>
+        <input type="text" id="subject" name="subject" placeholder="Subject.."><br>
+        <label for="Message">Message</label><br>
+        <textarea id="body" name="body" placeholder="Write something.." style="height:200px;"></textarea>
     <br>
-    <input type="checkbox" id="check" name="check"><label>&nbsp;Send me a copy of this email</label><br><br>
         <input type="submit" value="Submit">
     
       </form>
